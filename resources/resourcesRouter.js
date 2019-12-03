@@ -1,6 +1,6 @@
 const express = require("express");
 
-const resources = require("./resourceModel.js");
+const resources = require("./resourcesModel.js");
 
 const router = express.Router();
 
@@ -11,11 +11,9 @@ router.get("/", (req, res) => {
       res.status(200).json(resources);
     })
     .catch(err => {
-      res
-        .status(500)
-        .json({
-          message: `Unable to GET resources from database: Error ${err}`
-        });
+      res.status(500).json({
+        message: `Unable to GET resources from database: Error ${err}`
+      });
     });
 });
 
@@ -32,11 +30,9 @@ router.get("/:id", (req, res) => {
       }
     })
     .catch(err => {
-      res
-        .status(500)
-        .json({
-          message: `Unable to GET resources from database: Error ${err}`
-        });
+      res.status(500).json({
+        message: `Unable to GET resources from database: Error ${err}`
+      });
     });
 });
 
