@@ -1,0 +1,32 @@
+{
+  "name": "db-challenge-pt",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zac-smith-webtpt7/node-db-challenge-pt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zac-smith-webtpt7/node-db-challenge-pt/issues"
+  },
+  "homepage": "https://github.com/zac-smith-webtpt7/node-db-challenge-pt#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.3",
+    "knex-cleaner": "^1.3.0",
+    "morgan": "^1.9.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
